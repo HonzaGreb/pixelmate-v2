@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+  &__photo {
+    background-image: url('../img/homepage/hero.png');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    align-self: center;
+    justify-self: start;
+    max-width: 80%;
+  }
+
+  &__form {
+    align-self: center;
+    justify-self: end;
+    max-width: 80%;
+  }
+}
+
+.logobox {
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transform: translateY(-50%);
+
+  &__logo {
+    width: 10rem;
+    margin: 1rem 2rem;
+  }
+}
+
+.info {
+  position: relative;
+  padding: 15rem 0 20rem 0;
+  background-image: url('../img/homepage/illustration.png');
+  background-size: 40%;
+  background-position-x: right;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+
+  & > * {
+    z-index: 1;
+  }
+
+  &__text {
+    column-count: 2;
+    column-gap: 4rem;
+  }
+
+  .h2 {
+    font-size: 4.8rem;
+    max-width: 50%;
+    line-height: 1.2;
+  }
+
+  .h6 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+}

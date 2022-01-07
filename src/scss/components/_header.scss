@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  padding: 4rem 5rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+}

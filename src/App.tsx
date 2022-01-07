@@ -1,7 +1,14 @@
+import Header from "./components/UI/Header";
+import Homepage from "./components/pages/homepage/Homepage";
+import { Fragment } from "react";
+
 function App() {
   return (
-    <div>
-    </div>
+    <Fragment>
+      <Header />
+      <Homepage />
+      
+    </Fragment>
   );
 }
 

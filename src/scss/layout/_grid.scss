@@ -1,0 +1,48 @@
+.homepage {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr) [content-start] repeat(
+      2,
+      [col-start] minmax(30vw, 60rem) [col-end]
+    )
+    [content-end] minmax(4rem, 1fr)
+    [full-end];
+
+  grid-template-rows: repeat(3, [row-start] max-content [row-end]);
+  grid-column-gap: 1rem;
+
+  .hero {
+    &__photo {
+      grid-column: full-start / full-end;
+      grid-row: 1 / 2;
+    }
+
+    &__text {
+      grid-column: content-start / col-end 1;
+      grid-row: 1 / 2;
+    }
+
+    &__form {
+      grid-column: col-start 2 / content-end;
+      grid-row: 1 / 2;
+    }
+  }
+
+  .logobox {
+    grid-row: 2/3;
+    grid-column: content-start / content-end;
+  }
+
+  .info {
+    grid-row: 3/4;
+    grid-column: content-start / content-end;
+
+    display: grid;
+    grid-template-rows: max-content 1fr 2fr max-content;
+    row-gap: 1rem;
+
+    &__text {
+      align-self: center;
+    }
+  }
+}
