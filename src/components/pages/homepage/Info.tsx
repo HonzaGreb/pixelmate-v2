@@ -1,5 +1,3 @@
-import info_image from '../../../img/homepage/illustration.png';
-
 const Info = () => {
   return (
     <div className="info">
